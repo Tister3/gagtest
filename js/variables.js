@@ -1,5 +1,4 @@
-export const sectionpets = document.querySelector("#section-pets");
-export const sectionfruits = document.querySelector("#section-fruits");
+export const section = document.querySelector("#section");
 
 export const item = document.querySelector("#item");
 export const item_img = document.querySelector("#item-img");
