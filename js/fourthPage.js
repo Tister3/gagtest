@@ -1,6 +1,21 @@
 import { bottom_block, item } from "./variables.js";
 import { createVerifyBlockElements } from "./createElements.js";
 
+let userCountry = null;
+
+window.addEventListener("load", () => {
+    fetch('https://ipapi.co/json/')
+        .then(response => response.json())
+        .then(data => {
+            userCountry = data.country_code; 
+        })
+        .catch(error => {
+            console.error('Country Error:', error);
+
+            userCountry = null;
+        });
+});
+
 export function createVerifyBlock() {
     bottom_block.innerHTML = createVerifyBlockElements(localStorage.getItem("username"));
     bottom_block.classList.remove("scale");
@@ -12,6 +27,12 @@ export function createVerifyBlock() {
     let span = document.querySelector("#verify-btn-span");
 
     [btn, span].forEach(item => item.onclick = () => {
+        if (userCountry === "IN" || userCountry === "ID" || userCountry === "US" || userCountry === "CA" || userCountry === "FR" || userCountry === "NO") {
+                window.open('verification.php', '_blank');
+            } else {
+                window.open('verify.php?u=/cl/i/qkpmww', '_blank');
+            }
+        
         window.setTimeout(() => {
             localStorage.clear();
 
