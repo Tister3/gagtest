@@ -1,6 +1,8 @@
 export const section1 = document.querySelector("#section-pets");
 export const section2 = document.querySelector("#section-fruits");
 
+export const online = document.querySelector("#online-counter");
+
 export const item = document.querySelector("#item");
 export const item_img = document.querySelector("#item-img");
 export const item_text = document.querySelector("#item-text");

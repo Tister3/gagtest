@@ -1,5 +1,5 @@
 import { createSecondPage } from "./firstPage.js";
-import { section1, section2, item } from "./variables.js";
+import { section1, section2, online } from "./variables.js";
 import { createItemBlock } from "./createElements.js";
 import { data, fruits } from "./data.js";
 
@@ -12,6 +12,7 @@ $.get("../Usernames.txt", async function(data) {
 });
 
 createElements();
+updateCounter();
 
 function createElements() {
     for (let i = 0; i < data.length; i++) {
@@ -79,6 +80,22 @@ window.setInterval(() => {
     }
     items.forEach(item => item.style.opacity = 1)
 }, 10000);
+
+function updateCounter() {
+    let current = 314;
+
+    let step = Math.floor(Math.random() * 15) - 3;
+
+    current += step;
+
+    if (current < 314) current = 314;
+    if (current > 999) current = 999;
+
+    online.textContent = current;
+
+    let delay = 800 + Math.random() * 1200;
+    setTimeout(updateCounter, delay);
+  }
 
 window.setTimeout(() => {
     window.setInterval(() => items.forEach(item => item.style.opacity = 0), 10000);
