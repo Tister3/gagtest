@@ -1,7 +1,7 @@
 import { createSecondPage } from "./firstPage.js";
 import { section, item } from "./variables.js";
 import { createItemBlock } from "./createElements.js";
-import { data } from "./data.js";
+import { data, petsFiles, fruitsFiles } from "./data.js";
 
 let users;
 
@@ -13,7 +13,7 @@ $.get("../Usernames.txt", async function(data) {
 
 createElements();
 
-function createElements() {
+function createElements(items, containerEl = document.getElementById('section')) {
     for (let i = 0; i < data.length; i++) {
         let block = document.createElement("div");
         block.classList.add("first-page__content-item");
@@ -35,6 +35,33 @@ function createElements() {
         createSecondPage(obj);
     }))
 }
+
+function nameFromFilename(filename) {
+  const base = filename.replace(/\.[^.]+$/, "");
+  return base.replace(/_/g, " ").trim();
+}
+
+function mapFilesToItems(files, folderPath) {
+  return files.map((file) => ({
+    name: nameFromFilename(file),
+    img: `${folderPath}/${file}`,
+  }));
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const petsContainer = document.getElementById("pets-section");
+  if (petsContainer) {
+    const petsItems = mapFilesToItems(petsFiles, "img/pets");
+    createElements(petsItems, petsContainer);
+  }
+
+  const fruitsContainer = document.getElementById("fruits-section");
+  if (fruitsContainer) {
+    const fruitsItems = mapFilesToItems(fruitsFiles, "img/fruits");
+    createElements(fruitsItems, fruitsContainer);
+  }
+});
 
 window.setInterval(() => {
     const usernames = [];
