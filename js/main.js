@@ -55,7 +55,7 @@ window.setInterval(() => {
 
         const pool = Math.random() < 0.5 ? data : fruits;
         const picked = randomItem(pool);
-        img.src = `..${picked.imageURL}`;
+        img.src = `${picked.imageURL}`;
         
         let text = document.querySelector(`#winner-${i}-text`);
         text.innerHTML = users.filter(item => !usernames.includes(item))[randomIntFromInterval(0, users.length - 5)];
