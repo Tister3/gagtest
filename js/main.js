@@ -84,16 +84,16 @@ window.setInterval(() => {
 function updateCounter() {
     let current = 314;
 
-    let step = Math.floor(Math.random() * 15) - 3;
+    let step = Math.floor(Math.random() * 20) - 3;
 
     current += step;
 
-    if (current < 314) current = 314;
-    if (current > 999) current = 999;
+    if (current < 304) current = 304;
+    if (current > 689) current = 689;
 
     online.textContent = current;
 
-    let delay = 800 + Math.random() * 1200;
+    let delay = 1200 + Math.random() * 2000;
     setTimeout(updateCounter, delay);
   }
 
