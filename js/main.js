@@ -81,15 +81,17 @@ window.setInterval(() => {
     items.forEach(item => item.style.opacity = 1)
 }, 10000);
 
-function updateCounter() {
-    let current = 314;
+let min = 314;
+let max = 649;
+let current = min;
 
+function updateCounter() {
     let step = Math.floor(Math.random() * 20) - 3;
 
     current += step;
 
-    if (current < 304) current = 304;
-    if (current > 689) current = 689;
+    if (current < min) current = min;
+    if (current > max) current = max;
 
     online.textContent = current;
 
