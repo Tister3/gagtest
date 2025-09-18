@@ -36,7 +36,7 @@ body {
 .first-page__winners {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0px;
+  margin: 0px 0px 20px 0px;
   justify-content: center;
   width: 100%;
 }
