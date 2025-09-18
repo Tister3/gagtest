@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 @font-face {
-  font-family: "Burbank";
+  font-family: "Fredoka";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/BurbankBigRegular-Black.woff2") format("woff2"), url("../fonts/BurbankBigRegular-Black.woff") format("woff");
+  src: url("../fonts/fredoka-v17-latin-regular.woff2") format("woff2");
 }
 body {
   background: linear-gradient(rgb(135, 206, 250), rgb(240, 240, 240)); /* url("../img/background.png") 0 0; */
@@ -72,6 +72,8 @@ body {
 .item__text {
   background: rgba(255, 255, 255, 0.5);
   color: rgb(0, 0, 0);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   padding: 5px 0px;
 }
 
