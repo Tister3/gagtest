@@ -25,7 +25,7 @@ function createElements() {
         section1.append(block);
     }
 
-    for (let i = 0; i < fruits.length; i++) {
+    for (let i = data.length; i < data.length + fruits.length; i++) {
         let block = document.createElement("div");
         block.classList.add("first-page__content-item");
     
@@ -40,7 +40,6 @@ function createElements() {
 
     items.forEach(obj => obj.addEventListener("click", () => {
         localStorage.clear();
-        item.style.background = data[obj.id.slice(6)].bgColor;
 
         createSecondPage(obj);
     }))
