@@ -64,6 +64,7 @@ body {
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  gap: 1rem;
   margin: 0px auto 0px;
   text-align: center;
   width: 140px;
