@@ -84,12 +84,12 @@ window.setInterval(() => {
 function updateCounter() {
     let min = 314;
     let max = 649;
-    let current = min;
+    let current = parseInt(online.textContent, 10) || min;
 
-    let step = Math.floor(Math.random() * 20) - 2;
+    const drift = (max - current) * 0.08;
+    const noise = (Math.random()*10) - 5;
 
-    current += step;
-
+    current = Math.round(current + drift + noise);
     if (current < min) current = min;
     if (current > max) current = max;
 
