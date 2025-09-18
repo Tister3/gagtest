@@ -30,7 +30,7 @@ body {
   flex-direction: column;
 }
 .first-page__img {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .first-page__text {
   font-size: 24px;
@@ -82,7 +82,7 @@ body {
 .winners__item {
   align-items: center;
   border-radius: 5px;
-  background: #f9dba9;
+  background: #ffffff;
   display: flex;
   margin-right: 20px;
   opacity: 1;
