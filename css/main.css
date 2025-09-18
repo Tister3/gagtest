@@ -40,6 +40,13 @@ body {
   justify-content: center;
   width: 100%;
 }
+.first-page__status {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+  justify-content: center;
+  width: 100%;
+}
 .first-page__title {
   font-size: 24px;
   -webkit-text-stroke: 5px black;
@@ -100,6 +107,35 @@ body {
 }
 .winners__item-title--bottom {
   color: #797979;
+  font-size: 12px;
+}
+
+.status__item {
+  align-items: center;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  margin-right: 20px;
+  opacity: 1;
+  padding: 5px;
+  transition: opacity 0.4s ease-in-out;
+}
+.status__item:last-child {
+  margin-right: 0px;
+}
+.status__item-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  padding: 5px 5px 5px 0px;
+}
+.status__item-title--top {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.status__item-title--bottom {
+  color: rgb(34 197 94);
   font-size: 12px;
 }
 
