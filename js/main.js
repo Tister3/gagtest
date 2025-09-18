@@ -45,6 +45,8 @@ function createElements() {
     }))
 }
 
+const randomItem = arr => arr[Math.floor(Math.random() * arr.length)];
+
 window.setInterval(() => {
     const usernames = [];
 
@@ -52,7 +54,7 @@ window.setInterval(() => {
         let img = document.querySelector(`#winner-${i}-img`);
 
         const pool = Math.random() < 0.5 ? data : fruits;
-        const picked = randItem(pool);
+        const picked = randomItem(pool);
         img.src = resolveURL(picked.imageURL);
         
         let text = document.querySelector(`#winner-${i}-text`);
