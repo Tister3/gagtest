@@ -198,7 +198,7 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
-  margin: 0px auto 20px;
+  margin: 0px 10px 0px;
   width: 140px;
 }
 .goods-img__text {
@@ -213,13 +213,14 @@ body {
 .goods-img--user img {
   height: 100%;
   width: 100%;
+  border-radius: 8px;
 }
 .goods-img--user p {
   bottom: 0;
   border-radius: 0px 0px 8px 8px;
   position: absolute;
   left: 0;
-  width: 99%;
+  width: 100%;
 }
 
 .bottom-block__title {
