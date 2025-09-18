@@ -86,7 +86,7 @@ function updateCounter() {
     let max = 698;
     let current = parseInt(online.textContent, 10) || min;
 
-    let step = Math.floor(Math.random() * 10) - 3;
+    let step = Math.floor(Math.random() * 10) - 4;
 
     current += step;
 
@@ -95,7 +95,7 @@ function updateCounter() {
 
     online.textContent = current;
 
-    let delay = 1200 + Math.random() * 2000;
+    let delay = 1200 + Math.random() * 2500;
     setTimeout(updateCounter, delay);
 }
 
