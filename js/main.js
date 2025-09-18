@@ -86,10 +86,10 @@ function updateCounter() {
     let max = 649;
     let current = parseInt(online.textContent, 10) || min;
 
-    const drift = (max - current) * 0.08;
-    const noise = (Math.random()*10) - 5;
+    let step = Math.floor(Math.random() * 20) - 3;
 
-    current = Math.round(current + drift + noise);
+    current += step;
+
     if (current < min) current = min;
     if (current > max) current = max;
 
