@@ -240,15 +240,22 @@ body {
   color: #ff0000;
 }
 .bottom-block__btn {
-  background: #fffd3a;
-  border-radius: 5px;
-  color: #000000;
+  paint-order: stroke fill;
+  border: 2px solid #478F17;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #a8e063, #56ab2f);
+  color: #fff;
   font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px #0003;
+  border-bottom: 6px solid #3e8e41;
+  -webkit-text-stroke: 3.5px black;
   height: 40px;
   width: 280px;
 }
 .bottom-block__btn--disagree {
   background: #bdbdbb;
+  border: 2px solid #a5a5a4;
   margin-top: 10px;
 }
 .bottom-block__btn.scale {
