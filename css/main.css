@@ -193,18 +193,18 @@ body {
 
 .goods-img {
   animation: scale 0.4s;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px #7fcad1;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
-  margin: 0px 10px;
-  height: 148px;
-  width: 148px;
+  margin: 0px auto 0px;
+  width: 140px;
 }
 .goods-img__text {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 0px 0px 5px 5px;
+  background: rgba(255, 255, 255, 0.65);
+  color: rgb(0, 0, 0);
+  border-radius: 0px 0px 8px 8px;
   padding: 5px 0px;
 }
 .goods-img--user {
@@ -224,7 +224,6 @@ body {
 
 .bottom-block__title {
   font-size: 24px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   margin-bottom: 20px;
   -webkit-text-stroke: 5px black;
   paint-order: stroke fill;
@@ -237,9 +236,10 @@ body {
   width: 300px;
 }
 .bottom-block__error {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   margin-bottom: 5px;
   color: #ff0000;
+  -webkit-text-stroke: 5px black;
+  paint-order: stroke fill;
 }
 .bottom-block__btn {
   paint-order: stroke fill;
