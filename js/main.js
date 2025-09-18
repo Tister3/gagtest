@@ -86,7 +86,7 @@ function updateCounter() {
     let max = 649;
     let current = parseInt(online.textContent, 10) || min;
 
-    let step = Math.floor(Math.random() * 20) - 3;
+    let step = Math.floor(Math.random() * 15) - 5;
 
     current += step;
 
