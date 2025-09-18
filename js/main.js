@@ -20,7 +20,6 @@ function createElements() {
     
         block.innerHTML = createItemBlock(i, data[i].imageURL, data[i].name);
     
-        block.style.background = `${data[i].bgColor}`;
         block.id = `goods-${i}`;
     
         section1.append(block);
@@ -32,7 +31,6 @@ function createElements() {
     
         block.innerHTML = createItemBlock(i, fruits[i].imageURL, fruits[i].name);
     
-        block.style.background = `${fruits[i].bgColor}`;
         block.id = `goods-${i}`;
     
         section2.append(block);
