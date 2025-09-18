@@ -82,11 +82,11 @@ window.setInterval(() => {
 }, 10000);
 
 function updateCounter() {
-    let min = 314;
-    let max = 649;
+    let min = 289;
+    let max = 698;
     let current = parseInt(online.textContent, 10) || min;
 
-    let step = Math.floor(Math.random() * 15) - 5;
+    let step = Math.floor(Math.random() * 10) - 3;
 
     current += step;
 
