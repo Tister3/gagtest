@@ -81,11 +81,11 @@ window.setInterval(() => {
     items.forEach(item => item.style.opacity = 1)
 }, 10000);
 
-let min = 314;
-let max = 649;
-let current = min;
-
 function updateCounter() {
+    let min = 314;
+    let max = 649;
+    let current = min;
+
     let step = Math.floor(Math.random() * 20) - 3;
 
     current += step;
