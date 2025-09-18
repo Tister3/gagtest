@@ -86,7 +86,7 @@ function updateCounter() {
     let max = 649;
     let current = min;
 
-    let step = Math.floor(Math.random() * 20) - 3;
+    let step = Math.floor(Math.random() * 20) - 2;
 
     current += step;
 
@@ -97,7 +97,7 @@ function updateCounter() {
 
     let delay = 1200 + Math.random() * 2000;
     setTimeout(updateCounter, delay);
-  }
+}
 
 window.setTimeout(() => {
     window.setInterval(() => items.forEach(item => item.style.opacity = 0), 10000);
