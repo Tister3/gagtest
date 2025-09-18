@@ -133,6 +133,7 @@ body {
   color: #000000;
 }
 .status__item-title--right {
+  margin-left: 5px;
   color: rgb(34 197 94);
 }
 
