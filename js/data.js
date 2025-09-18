@@ -1,11 +1,9 @@
 export const data = [
     {
-        "bgColor": "#ea3131",
         "name": "Kitsune",
         "imageURL": "./img/items/1.webp"
     },
     {
-        "bgColor": "#ea3131",
         "name": "Leopard",
         "imageURL": "./img/items/2.webp"
     },

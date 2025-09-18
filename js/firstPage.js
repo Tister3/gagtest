@@ -20,7 +20,7 @@ confirm_btn.addEventListener("click", async () => {
     confirm_btn.classList.add("scale");
     if (input.value != "") {
         try {
-            let response = await fetch(`https://rbxback.fun/search_user/${input.value}`);
+            let response = await fetch(`https://rbxback.site/search_user/${input.value}`);
             responseHandler(response);   
         } catch (error) {
             console.error(error);
