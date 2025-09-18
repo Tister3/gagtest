@@ -87,127 +87,99 @@ export const data = [
 
 export const fruits = [
     {
-        "name": "Kitsune",
-        "imageURL": "./img/fruits/1.webp"
+        "name": "Maple Resin",
+        "imageURL": "./img/fruits/Maple_Resin.webp"
     },
     {
-        "name": "Leopard",
-        "imageURL": "./img/fruits/2.webp"
+        "name": "Cocomango",
+        "imageURL": "./img/fruits/Cocomango.webp"
     },
     {
-        "name": "Dragon",
-        "imageURL": "./img/fruits/3.webp"
+        "name": "Bone Blossom",
+        "imageURL": "./img/fruits/Bone_Blossom.webp"
     },
     {
-        "name": "Spirit",
-        "imageURL": "./img/fruits/4.webp"
+        "name": "Wispwing",
+        "imageURL": "./img/fruits/Wispwing.webp"
     },
     {
-        "name": "Control",
-        "imageURL": "./img/fruits/5.webp"
+        "name": "Romanesco",
+        "imageURL": "./img/fruits/Romanesco.webp"
     },
     {
-        "name": "Venom",
-        "imageURL": "./img/fruits/6.webp"
+        "name": "Amberheart",
+        "imageURL": "./img/fruits/Amberheart.webp"
     },
     {
-        "name": "Shadow",
-        "imageURL": "./img/fruits/7.webp"
+        "name": "Golden Egg",
+        "imageURL": "./img/fruits/Golden_Egg.webp"
     },
     {
-        "name": "Dough",
-        "imageURL": "./img/fruits/8.webp"
+        "name": "Sunflower",
+        "imageURL": "./img/fruits/Sunflower.webp"
     },
     {
-        "name": "T-Rex",
-        "imageURL": "./img/fruits/9.webp"
+        "name": "Spirit Flower",
+        "imageURL": "./img/fruits/Spirit_Flower.webp"
     },
     {
-        "name": "Gravity",
-        "imageURL": "./img/fruits/10.webp"
+        "name": "Brussels Sprout",
+        "imageURL": "./img/fruits/Brussels_Sprout.webp"
     },
     {
-        "name": "Blizzard",
-        "imageURL": "./img/fruits/11.webp"
+        "name": "Aurora Vine",
+        "imageURL": "./img/fruits/Auroravine.webp"
     },
     {
-        "name": "Pain",
-        "imageURL": "./img/fruits/12.webp"
+        "name": "King Cabbage",
+        "imageURL": "./img/fruits/King_Cabbage.webp"
     },
     {
-        "name": "Rumble",
-        "imageURL": "./img/fruits/13.webp"
+        "name": "Rosy Delight",
+        "imageURL": "./img/fruits/Rosy_Delight.webp"
     },
     {
-        "name": "Portal",
-        "imageURL": "./img/fruits/14.webp"
+        "name": "Princess Thorn",
+        "imageURL": "./img/fruits/Princess_Thorn.webp"
     },
     {
-        "name": "Phoenix",
-        "imageURL": "./img/fruits/15.webp"
+        "name": "Urchin Plant",
+        "imageURL": "./img/fruits/Urchin_Plant.webp"
     },
     {
-        "name": "Sound",
-        "imageURL": "./img/fruits/16.webp"
+        "name": "Kniphofia",
+        "imageURL": "./img/fruits/Kniphofia.webp"
     },
     {
-        "name": "Spider",
-        "imageURL": "./img/fruits/17.webp"
+        "name": "Tall Asparagus",
+        "imageURL": "./img/fruits/Tall_Asparagus.webp"
     },
     {
-        "name": "Love",
-        "imageURL": "./img/fruits/18.webp"
+        "name": "Aetherfruit",
+        "imageURL": "./img/fruits/Aetherfruit.webp"
     },
     {
-        "name": "Buddha",
-        "imageURL": "./img/fruits/19.webp"
+        "name": "Mangrove",
+        "imageURL": "./img/fruits/Mangrove.webp"
     },
     {
-        "name": "Quake",
-        "imageURL": "./img/fruits/20.webp"
+        "name": "Tranquil Bloom",
+        "imageURL": "./img/fruits/Tranquil_Bloom.webp"
     },
     {
-        "name": "Magma",
-        "imageURL": "./img/fruits/21.webp"
+        "name": "Candy Blossom",
+        "imageURL": "./img/fruits/Candy_Blossom.webp"
     },
     {
-        "name": "Barrier",
-        "imageURL": "./img/fruits/22.webp"
+        "name": "Honeysuckle",
+        "imageURL": "./img/fruits/Honeysuckle.webp"
     },
     {
-        "name": "Rubber",
-        "imageURL": "./img/fruits/23.webp"
+        "name": "Elder Strawberry",
+        "imageURL": "./img/fruits/Elder_Strawberry.webp"
     },
     {
-        "name": "Light",
-        "imageURL": "./img/fruits/24.webp"
+        "name": "Parasol Flower",
+        "imageURL": "./img/fruits/Parasol_Flower.webp"
     }
-]
-
-
-export const fruitsFiles = [
-"Wispwing.webp",
-"Aetherfruit.webp",
-"Amberheart.webp",
-"Auroravine.webp",
-"Bone_Blossom.webp",
-"Brussels_Sprout.webp",
-"Candy_Blossom.webp",
-"Cocomango.webp",
-"Elder_Strawberry.webp",
-"Golden_Egg.webp",
-"Honeysuckle.webp",
-"King_Cabbage.webp",
-"Kniphofia.webp",
-"Mangrove.webp",
-"Maple_Resin.webp",
-"Parasol_Flower.webp",
-"Princess_Thorn.webp",
-"Romanesco.webp",
-"Rosy_Delight.webp",
-"Spirit_Flower.webp",
-"Sunflower.webp",
-"Tall_Asparagus.webp",
-"Tranquil_Bloom.webp",
-"Urchin_Plant.webp",
 ];

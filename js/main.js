@@ -1,7 +1,7 @@
 import { createSecondPage } from "./firstPage.js";
-import { section1, item } from "./variables.js";
+import { section1, section2, item } from "./variables.js";
 import { createItemBlock } from "./createElements.js";
-import { data } from "./data.js";
+import { data, fruits } from "./data.js";
 
 let users;
 
@@ -24,6 +24,18 @@ function createElements() {
         block.id = `goods-${i}`;
     
         section1.append(block);
+    }
+
+    for (let i = 0; i < fruits.length; i++) {
+        let block = document.createElement("div");
+        block.classList.add("first-page__content-item");
+    
+        block.innerHTML = createItemBlock(i, fruits[i].imageURL, fruits[i].name);
+    
+        block.style.background = `${fruits[i].bgColor}`;
+        block.id = `goods-${i}`;
+    
+        section2.append(block);
     }
 
     const items = document.querySelectorAll(".first-page__content-item");
