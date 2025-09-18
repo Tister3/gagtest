@@ -125,7 +125,7 @@ body {
 }
 .status__item-title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5px;
   padding: 5px 5px 5px 0px;
 }
