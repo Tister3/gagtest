@@ -1,5 +1,5 @@
 import { createSecondPage } from "./firstPage.js";
-import { section, item } from "./variables.js";
+import { sectionpets, sectionfruits, item } from "./variables.js";
 import { createItemBlock } from "./createElements.js";
 import { data } from "./data.js";
 
@@ -23,7 +23,7 @@ function createElements() {
         block.style.background = `${data[i].bgColor}`;
         block.id = `goods-${i}`;
     
-        section.append(block);
+        sectionpets.append(block);
     }
 
     const items = document.querySelectorAll(".first-page__content-item");
