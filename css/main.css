@@ -48,6 +48,7 @@ body {
 }
 .first-page__title {
   font-size: 24px;
+  font-weight: bold;
   -webkit-text-stroke: 4px black;
   paint-order: stroke fill;
   text-transform: uppercase;
@@ -72,6 +73,7 @@ body {
 .item__text {
   background: rgba(255, 255, 255, 0.5);
   color: rgb(0, 0, 0);
+  font-weight: bold;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 5px 0px;
