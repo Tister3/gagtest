@@ -34,9 +34,8 @@ body {
 }
 .first-page__text {
   font-size: 24px;
-  font-weight: bold;
   text-align: center;
-  -webkit-text-stroke: 4px black;
+  -webkit-text-stroke: 5px black;
   paint-order: stroke fill;
 }
 .first-page__winners {
@@ -48,8 +47,7 @@ body {
 }
 .first-page__title {
   font-size: 24px;
-  font-weight: bold;
-  -webkit-text-stroke: 4px black;
+  -webkit-text-stroke: 5px black;
   paint-order: stroke fill;
   text-transform: uppercase;
   text-align: center;
@@ -62,6 +60,7 @@ body {
   margin: 0px auto;
 }
 .first-page__content-item {
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -71,9 +70,9 @@ body {
 }
 
 .item__text {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.65);
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: 600;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 5px 0px;
