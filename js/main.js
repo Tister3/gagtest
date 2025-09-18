@@ -29,7 +29,7 @@ function createElements() {
         let block = document.createElement("div");
         block.classList.add("first-page__content-item");
     
-        block.innerHTML = createItemBlock(i, fruits[i].imageURL, fruits[i].name);
+        block.innerHTML = createItemBlock(i, fruits[i - data.length].imageURL, fruits[i - data.length].name);
     
         block.id = `goods-${i}`;
     
