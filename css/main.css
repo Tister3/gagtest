@@ -9,6 +9,17 @@ body {
   font-weight: 700;
 }
 
+.floating-fruits {
+  position: absolute;
+  width: 170px;
+  height: auto;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  transition-duration: .2s;
+  opacity: .5;
+}
+
 .container {
   align-items: center;
   flex-direction: column;
