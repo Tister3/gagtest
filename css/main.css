@@ -9,16 +9,19 @@ body {
   font-weight: 700;
 }
 
+#floating-images-container { position: relative; overflow: hidden; }
 .floating-fruits {
   position: absolute;
-  width: 170px;
-  height: auto;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
-  transition-duration: .2s;
-  opacity: .5;
+  top: 0; left: 0; /* старт управляется JS */
+  transform: translate(0px, 0px);
+  will-change: transform;
+  pointer-events: auto;
+  transition: transform .18s ease; /* для кликов scale */
 }
+@media (prefers-reduced-motion: reduce) {
+  .floating-fruits { transition: none !important; }
+}
+
 
 .container {
   align-items: center;

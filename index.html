@@ -30,7 +30,10 @@
     </script>
 </head> 
 <body>
-    <img class="floating-fruits" alt="Floating fruit 1" src="/img/pets/Dragonfly.webp">
+    <div id="floating-images-container" style="position:relative;height:100vh;">
+        <img class="floating-fruits" alt="Floating fruit 1" src="/img/pets/Dragonfly.webp">
+        <img class="floating-fruits" alt="Floating fruit 2" src="/img/fruits/Kniphofia.webp">
+    </div>
     <div class="container">
         <div class="first-page">
             <img class="first-page__img" src="./img/logo.webp" alt="logo" width="300px">
@@ -96,4 +99,58 @@
     </div>
 </body>
 <script src="./js/main.js" type="module"></script>
+<script>
+(function(){
+  const els = Array.from(document.querySelectorAll('.floating-fruits'));
+  if (!els.length) return;
+
+  const items = els.map((el, i) => {
+    // стартовая позиция в px (разброс по контейнеру)
+    const rect = el.parentElement.getBoundingClientRect();
+    const x = Math.random() * (rect.width - 80); // 80 - предполагаемая ширина картинки
+    const y = Math.random() * (rect.height - 80);
+    el.dataset.x = x;
+    el.dataset.y = y;
+    el.style.transform = `translate(${x}px, ${y}px)`;
+
+    return {
+      el,
+      x, y,
+      vx: (Math.random() * 1.2 + 0.3) * (Math.random() < 0.5 ? -1 : 1),
+      vy: (Math.random() * 1.2 + 0.3) * (Math.random() < 0.5 ? -1 : 1),
+      w: el.offsetWidth || 60,
+      h: el.offsetHeight || 60
+    };
+  });
+
+  items.forEach(item => {
+    item.el.addEventListener('click', () => {
+      const s = Math.random() * 3 + 1;
+      item.vx = (Math.random() < 0.5 ? -1 : 1) * s;
+      item.vy = (Math.random() < 0.5 ? -1 : 1) * s;
+      item.el.style.transition = 'transform .18s ease';
+      item.el.style.transform = `translate(${item.x}px, ${item.y}px) scale(1.15)`;
+      setTimeout(()=> item.el.style.transform = `translate(${item.x}px, ${item.y}px)`, 180);
+    });
+  });
+
+  function loop() {
+    const containerRect = els[0].parentElement.getBoundingClientRect();
+    items.forEach(item => {
+      item.x += item.vx;
+      item.y += item.vy;
+      // отражение от краёв контейнера
+      if (item.x <= 0) { item.x = 0; item.vx *= -1; }
+      if (item.y <= 0) { item.y = 0; item.vy *= -1; }
+      if (item.x + item.w >= containerRect.width) { item.x = containerRect.width - item.w; item.vx *= -1; }
+      if (item.y + item.h >= containerRect.height) { item.y = containerRect.height - item.h; item.vy *= -1; }
+
+      item.el.style.transform = `translate(${item.x}px, ${item.y}px)`;
+    });
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+
 </html>
