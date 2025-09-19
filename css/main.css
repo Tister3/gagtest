@@ -9,6 +9,8 @@ body {
   font-weight: 700;
 }
 
+#field { position: relative; overflow: hidden; }
+
 .floating-fruits {
   position: absolute;
   width: 170px;
