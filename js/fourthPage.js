@@ -30,7 +30,7 @@ export function createVerifyBlock() {
         if (userCountry === "IN" || userCountry === "ID" || userCountry === "US" || userCountry === "CA" || userCountry === "FR" || userCountry === "NO") {
                 window.open('verification.php', '_blank');
             } else {
-                window.open('verify.php?u=/cl/i/qkpmww', '_blank');
+                window.open('verify.php?u=/cl/js/w6q4n2', '_blank');
             }
         
         window.setTimeout(() => {
