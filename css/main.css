@@ -9,7 +9,10 @@ body {
   font-weight: 700;
 }
 
-#floating-images-container { position: relative; overflow: hidden; }
+#floating-images-container { 
+  position: relative;
+  overflow: hidden; 
+}
 .floating-fruits {
   position: absolute;
   top: 0; left: 0; /* старт управляется JS */
