@@ -14,12 +14,15 @@ body {
   overflow: hidden; 
 }
 .floating-fruits {
+  width: 170px;
+  height: auto;
+  opacity: 0.5;
   position: absolute;
-  top: 0; left: 0; /* старт управляется JS */
+  top: 0; left: 0;
   transform: translate(0px, 0px);
   will-change: transform;
   pointer-events: auto;
-  transition: transform .18s ease; /* для кликов scale */
+  transition: transform .18s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .floating-fruits { transition: none !important; }
