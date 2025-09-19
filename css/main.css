@@ -21,7 +21,7 @@ body {
 .floating-fruits {
   width: 140px;
   height: auto;
-  opacity: 0.3;
+  opacity: 0.2;
   position: absolute;
   top: 0; left: 0;
   transform: translate(0px, 0px);
@@ -33,6 +33,9 @@ body {
   .floating-fruits { transition: none !important; }
 }
 
+#section-fruits { 
+  padding-bottom: 50px;
+}
 
 .container {
   align-items: center;
